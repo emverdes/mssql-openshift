@@ -3,5 +3,5 @@ apiVersion: v1
 metadata:
   name: mssql
 data:
-  MSSQL_SA_PASSWORD: TXlQNDEwMjQxM3cwcmQ=
+  MSSQL_SA_PASSWORD: U3RyMG5nUDRzcwo=
 type: Opaque

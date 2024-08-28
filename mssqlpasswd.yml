@@ -1,0 +1,7 @@
+kind: Secret
+apiVersion: v1
+metadata:
+  name: mssql
+data:
+  MSSQL_SA_PASSWORD: TXlQNDEwMjQxM3cwcmQ=
+type: Opaque

@@ -4,9 +4,7 @@ metadata:
   name: mssql-data
 spec:
   storageClassName: ""
-  claimRef:
-    name: pvmysql
-    namespace: mssql
+  volume: pvmysql
   accessModes:
   - ReadWriteOnce
   resources:

@@ -17,13 +17,15 @@ You can also use the secret object yaml file.
 ```
 $ oc apply -f mssqlpasswd.yml
 ```
-Create persistent volume claim. This PVC will provision a Persistent Volume in the default Storage Class
+Create persistent volume claim. This PVC will provision a Persistent Volume in the **default Storage Class**
 You can specify a storage class adding a line   storageClassName: <name-of-storage-class> in the spec section.
+If you don't have a storage class with automatic provisioning you should configure a persistent volume acording 
+your infrastructure.
 
 ```
 $ oc apply -f sqlpvc.yml
 ```
-Create deployment
+Create deployment. The image used is based on RHEL8 UBI.
 ```
 $ oc apply -f sqldeployment.yml
 ```

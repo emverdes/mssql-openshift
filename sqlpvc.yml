@@ -3,6 +3,10 @@ apiVersion: v1
 metadata:
   name: mssql-data
 spec:
+  storageClassName: ""
+  claimRef:
+    name: pvmysql
+    namespace: mssql
   accessModes:
   - ReadWriteOnce
   resources:
